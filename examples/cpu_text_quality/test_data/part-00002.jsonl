@@ -1,0 +1,7 @@
+{"case_id": "spaces", "text": "   ", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "pseudo_null_lower", "text": "null", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "two_tokens", "text": "page next", "test_targets": ["token_num"], "expected_basic_keep": false}
+{"case_id": "mixed_language", "text": "这个 pipeline uses English words 但是缺少稳定的 language boundary データ。", "test_targets": ["language"], "expected_basic_keep": true}
+{"case_id": "sentence_repeat", "text": "这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。这是一个反复出现的模板句子。", "test_targets": ["sentence_repeat", "character_repetition"], "expected_basic_keep": false}
+{"case_id": "near_dup", "text": "Data cleaning removes malformed records before model training. A careful pipeline records why each document was rejected and keeps useful metadata. This copy adds a short footer.", "test_targets": ["minhash"], "expected_basic_keep": true}
+{"case_id": "low_quality", "text": "click here click here BEST!!! $$$ win now 123 ???", "test_targets": ["quality", "ppl"], "expected_basic_keep": true}

@@ -1,0 +1,7 @@
+{"case_id": "newlines", "text": "\n\n", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "pseudo_null_none", "text": "None", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "good_zh", "text": "数据清洗能够减少训练语料中的噪声，并提升模型学习到的信息质量。", "test_targets": ["language", "ppl", "quality"], "expected_basic_keep": true}
+{"case_id": "mojibake", "text": "Ã©Â�Â™Ã¦Â€� Ð¿Ñ€Ð¸Ð¼ÐµÑ€ â€™â€™â€™", "test_targets": ["language", "ppl", "quality"], "expected_basic_keep": true}
+{"case_id": "unique_sentences", "text": "春天适合观察植物。夏天可以记录降雨。秋天能够收集种子。冬天则分析全年数据。", "test_targets": ["sentence_repeat"], "expected_basic_keep": true}
+{"case_id": "semantic_dup", "text": "A robust preprocessing workflow drops corrupt samples and retains valuable training text.", "test_targets": ["embedding"], "expected_basic_keep": true}
+{"case_id": "math_high_ppl", "text": "For x ∈ ℝ, ∫₀^∞ e^{-x²} dx = √π/2; hence the Gaussian normalizer follows.", "test_targets": ["ppl", "quality"], "expected_basic_keep": true}

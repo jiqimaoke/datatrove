@@ -1,0 +1,7 @@
+{"case_id": "empty", "text": "", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "zero_width", "text": "​‌﻿", "test_targets": ["real_text"], "expected_basic_keep": false}
+{"case_id": "one_token", "text": "Menu", "test_targets": ["token_num"], "expected_basic_keep": false}
+{"case_id": "good_ja", "text": "データクリーニングは学習コーパスの品質を改善します。", "test_targets": ["language"], "expected_basic_keep": true}
+{"case_id": "normal_multiline", "text": "第一行包含正常内容。\n第二行也有足够信息。\n第三行用于测试行长。", "test_targets": ["maximum_line_length"], "expected_basic_keep": true}
+{"case_id": "exact_dup_b", "text": "Data cleaning removes malformed records before model training. A careful pipeline records why each document was rejected and keeps useful metadata.", "test_targets": ["minhash"], "expected_basic_keep": true}
+{"case_id": "base64_like_but_invalid", "text": "Article identifiers: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcd-zyxwvutsrqponmlkjihgfedcba9876543210WXYZ. This remains readable context.", "test_targets": ["base64"], "expected_basic_keep": true}
